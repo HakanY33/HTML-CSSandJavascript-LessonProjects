@@ -1,0 +1,83 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #container {
+            display: flex;
+        }
+
+        #solTaraf {
+            flex: 1;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+
+        #sagTaraf {
+            flex: 3;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+
+        /* İsteğe bağlı: Kenar boşlukları ayarlamak için */
+        #container {
+            margin: 10px;
+        }
+
+        /* İsteğe bağlı: İçerikleri ortalamak için */
+        #solTaraf, #sagTaraf {
+            display: flex;
+            align-items: left;
+            justify-content: left;
+            height: 75vh; /* Sayfa yüksekliğinin tamamı */
+        }
+
+        /* Eklenen stil */
+        #ustTaraf {
+            background-color: rgb(77, 75, 75);
+            color: white;
+            margin: 50px;
+            border-radius: 20px;
+            padding: 10px; /* İsteğe bağlı: içeriğe iç kenar boşluğu ekler */
+            box-sizing: border-box;
+        }
+    </style>
+    <title>Resources</title>
+</head>
+<body>
+    <div id="ustTaraf">
+        <h2> &nbsp; Home &nbsp; Schedule &nbsp; Resources </h2>
+    </div>
+    <div id="container">
+        <div id="solTaraf">
+            <td>
+                <h4>Related:</h4>
+                <ul style="list-style-type: square; margin-left: 0;">
+                    <li>CogRob</li>
+                    <li>Lecturer</li>
+                    <li>GaTech</li>
+                    <li>SciKit-Learn</li>
+                    <li>KM-Toolkit</li>
+                </ul>
+            </td>
+        </div>
+        <div id="sagTaraf">
+            <h1 style="color: red;">Resources</h1><br>
+            <ul>
+                <li>hasti book</li>
+                <li>Kevin</li>
+                <li>Scikit</li>
+                <li>Matlab</li>
+                <li>Papers</li>
+                <li>MS Decision</li>
+
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

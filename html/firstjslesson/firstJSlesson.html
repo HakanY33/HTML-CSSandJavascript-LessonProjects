@@ -1,0 +1,81 @@
+<html>
+    <script src="firstJSlesson.js" type="text/JavaScript"></script>
+    <body>
+        <h1>JavaScript Output</h1>
+        <p id="test"></p>
+        <script>
+            document.getElementById("test").innerHTML="";
+        </script>
+    </body>
+</html>
+<html>
+    <body>
+        <h1>JavaScript Output</h1>
+
+        <p>Date of System</p>
+        <script>
+            document.write(Date());
+        </script>
+    </body>
+</html>
+<html>
+    <body>
+        <h1>JavaScript Output</h1>
+
+        <script>
+            document.write(1+3);
+        </script>
+    </body>
+</html>
+<html>
+    <head>
+        <script>
+            var num1, num2, sum
+            num1 = prompt("Enter first number")
+            num2 = prompt("Enter second number")
+            sum = parseInt(num1) + parseInt(num2) //"+" means add
+            alert("Sum = + sum") // "+" means combine into a string
+        </script>
+    </head>
+</html>
+<html>
+    <body>
+        
+        <script>
+            var person = {
+                firstname : "john",
+                lastname : "Doe",
+                age : 50,
+                eyecolor : "blue"
+
+            };
+
+            document.write(person.firstname + "is" + person.age + "years old.")
+
+        </script>
+    </body>
+</html>
+<html>
+<body>
+<p>Click the button to see the effect of switch-case:</p>
+<button onclick="myFunction()">Try it</button>
+<script>
+function myFunction() {   
+ var x=2,y=7,z=x+y;
+  switch (z)
+ {        case 0:     
+       document.write("Zero");        break;       
+ case 1:           
+ document.write("one");            break;    
+    case 2:      
+      document.write("two");         break;    
+    case 3:        
+    document.write("three");       break;      
+  case 4:           
+ document.write("four");        break; 
+default: document.write("Number is not here")
+        } }   
+</script>
+</body>
+</html>
+

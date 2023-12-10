@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script>
+            function printname()
+            {
+                var username = document.getElementById("idName").value;
+                alert(username);
+                //document.write(username)
+            }
+            function printsurname()
+            {
+                var username = document.getElementById("idsurname").value
+                alert(username);
+            }
+            function changeimage()
+            {
+                var myimage = document.getElementById("icon01");
+                myimage.src = "C:\Users\HAKAN\Desktop\VS\IceCreamSystem\images\banana.jpg";
+                
+            }
+        </script>
+    </head>
+    <body>
+        <img id="icon01" src="C:\Users\HAKAN\Desktop\VS\IceCreamSystem\images\strawberry.jpg" alt="My image"/>
+        <button onclick="changeimage();">Click Me!</button>
+        <form> 
+            <p>First Name:<input type="text" id="idName" name="txtName" /></p>
+            <p>SurName:<input type="text" id="idsurname" name="txtName" /></p>
+            <p><input type="submit" value="Submit" onclick="printname(), printsurname()" /></p>
+        </form>
+    </body>
+</html>
